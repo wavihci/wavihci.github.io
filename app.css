@@ -1,0 +1,11 @@
+.greet{
+    text-align: center;
+    color: blue;
+    border: 10px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: beige;
+}
+
+.greetheight{
+    background-color: aquamarine;
+}
