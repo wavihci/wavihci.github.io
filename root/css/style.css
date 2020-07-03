@@ -197,14 +197,15 @@ body{
 
 .btn-small{
      display: inline-block;
-    border-width: 0px;
-    background-color: #73D6FB;
-    font-weight: 500;
-    font-size: small;
-    color: #121212;
-    border-radius: 1.5rem;
-    cursor: pointer;
+     border-width: 0px;
+     background-color: #73D6FB;
+     font-weight: 500;
+     font-size: small;
+     color: #121212;
+     border-radius: 1.5rem;
+     cursor: pointer;
 }
+
 
 .option-button-group{
      margin-top: 6px;
