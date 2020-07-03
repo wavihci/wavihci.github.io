@@ -154,6 +154,63 @@ body{
      font-size: large;
 }
 
+.card-mystyle{
+     background-color: #181818;
+     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
+     padding: 12px;
+     margin: 4px;
+}
+
+.avatar_card{
+     height: 64px;
+     margin-left: -15px;
+}
+
+.card-name{
+     font-size: small;
+     font-weight: 500;
+     color: #73D6FB;
+}
+.card-member{
+     font-size: 0.7rem;
+     font-weight: normal;
+     color: #7b7b7b;
+}
+
+
+
+.gridV .row{
+     margin-left:  0px;
+     margin-right: 0px;
+}
+
+.gridV{
+     width: 100%;
+     padding-left: 4px;
+     padding-right: 4px;
+}
+
+.custome-col{
+     padding-left: 0px;
+     padding-right: 0px;
+}
+
+.btn-small{
+     display: inline-block;
+    border-width: 0px;
+    background-color: #73D6FB;
+    font-weight: 500;
+    font-size: small;
+    color: #121212;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.option-button-group{
+     margin-top: 6px;
+     margin-left: auto;
+}
+
 @media (min-width: 935px) {
      .navbar-expand-lg {
        -ms-flex-flow: row nowrap;
