@@ -212,6 +212,53 @@ body{
      margin-left: auto;
 }
 
+.gridV .row a{
+     text-decoration: none;
+     color: #73D6FB;
+}
+
+.create-g{
+     display: inline-block;
+     margin-left: 25px;
+     margin-top: -5px;
+}
+.modal-dialog{
+     margin-top: 7%;
+}
+.modal-content{
+     background-color: #151515;
+}
+.modal-header{
+     border-bottom: none;
+}
+.modal-footer{
+     border-top: none;
+}
+.close{
+     height: 45px;
+     line-height: 0;
+}
+
+.cancel{
+     background-color: #FF8282;
+}
+.mt-dialog{
+     color: #dfdfdf;
+     font-size: small;
+     font-weight: 500;
+     margin-top: 10px;
+}
+.custome-form{
+     background-color: #181818;
+     border-color: #707070;
+     font-size: small;
+     font-weight: 500;
+}
+.custome-form:focus{
+     background-color: #181818;
+     color: #dfdfdf;
+}
+
 @media (min-width: 935px) {
      .navbar-expand-lg {
        -ms-flex-flow: row nowrap;
@@ -267,7 +314,7 @@ body{
           max-width: 30px;
      }
      .fa-2x{
-          font-size: medium;
+          font-size: medium !important;
      }
      .avatar{
           height: 35px;
