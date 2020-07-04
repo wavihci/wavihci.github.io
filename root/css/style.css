@@ -2,6 +2,9 @@
      padding: 0px;
      margin: 0px;
 }
+a {
+     text-decoration: none !important;
+}
 
 body{
      background-color: #121212;
@@ -101,7 +104,7 @@ body{
 }
 
 .bg-dark{
-     background-color: #202020 !important;
+     background-color: #252525 !important;
 
      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.6);
 }
@@ -258,6 +261,85 @@ body{
      background-color: #181818;
      color: #dfdfdf;
 }
+.infor-container{
+     margin-top: 8px;
+     margin-left: 4px;
+     margin-right: 8px;
+}
+.fix-col-padding{
+     padding-left: 0px;
+     padding-right: 0px;
+}
+.fix-col-padding .row{
+     margin-right: 0px;
+     margin-left: 0px;
+}
+.group_large{
+     height: 165px;
+     padding: 16px;
+     display: inline-block;
+}
+.group-name-main{
+     display: inline-block;
+     margin-left: 8px;
+}
+.group-name-main a{
+     display: inline-block;
+     font-size: larger;
+     font-weight: 500;
+     color: #73D6FB;
+     text-decoration: none;
+}
+.text-normal{
+     color:#dfdfdf;
+     font-size: small;
+     font-weight: normal;
+}
+.add-member-btn{
+     
+}
+.option-button{
+     display: inline-block;
+     position: relative;
+     margin: 8px;
+     left: 47%;
+}
+.more_button{
+     display: inline-block;
+     height: 31px;
+     width: 31px;
+     margin: -1px 16px 1px 8px;
+}
+
+.upload-title{
+     font-weight: 500;
+     color: #73D6FB;
+     font-size: small;
+     margin: 16px;
+     margin-top: 0px;
+     padding-top: 12px;
+}
+.new_product_button{
+     position: relative;
+     display: block;
+     max-height: 89px;
+     max-width: auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 16px;
+     margin-bottom: 16px;
+     cursor: pointer;
+}
+
+.add-content{
+     padding:16px;
+     background-color: #151515;
+}
+
+.group-video{
+     margin-top: 8px;
+     padding: 8px;
+}
 
 @media (min-width: 935px) {
      .navbar-expand-lg {
@@ -309,12 +391,19 @@ body{
      }
 }
 
+@media (max-width: 410px){
+     .new_product_button{
+          max-height: 65px;
+     }
+}
+
 @media (max-width: 361px){
      .right-nav-mystyle{
           max-width: 30px;
+          margin-right: 8px;
      }
      .fa-2x{
-          font-size: medium !important;
+          font-size: large !important;
      }
      .avatar{
           height: 35px;

@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="root/css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Wavi Nhóm</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <!-- Links -->
+      <!--Logo-->
+      <!-- Toggler/collapsibe Button -->
+      <a class="navbar-brand logo-mystyle" href="#">
+        <img src="images/Logo.png" style="height: 36px"/>
+      </a>
+
+      <button class="navbar-toggler ml-auto" style="padding-top: 15px;" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapsibleNav collapsibleNav2">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars fa-lg text-center" style="color: #dfdfdf;"></i>
+        </span>
+      </button>
+
+       
+      <!--Navbar can collapse-->
+      <div class="collapse navbar-collapse multi-collapse" id="collapsibleNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link navbtn-mystyle navbtn-mystyle-selected text-center" href="index.html">Nhóm</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link navbtn-mystyle text-center" href="#">Sự kiện</a>
+          </li>
+        </ul>
+      </div>
+      <!--end of collapse navbar-->
+      <div class="collapse navbar-collapse multi-collapse input-group" style="max-width: 500px;" id="collapsibleNav2">
+        <input class="form-control form-rounded my-sbox min-index" type="text" placeholder="Tìm kiếm..." aria-label="Search">
+        <div class="input-group-append">
+          <!--input group text -->
+          <span class="input-group-text sbtn-rounded btn-mystyle" id="basic-text">
+            <i class="fa fa-search fa-sm"></i>
+          </span>
+        </div>
+      </div>
+      <a href="#" class="nav-link right-nav-mystyle" >
+        <i class="fa fa-upload fa-2x button-icon-up" style="color:#EAEAEA"></i>
+        <button class="btn btn-mystyle btn-rounded button-text" style="min-width: 142px;">Thêm video mới</button>
+      </a>
+      <a href="#" class="nav-link right-nav-mystyle" >
+        <i class="fa fa-bell fa-2x" style="transform: rotate(25deg); color:#EAEAEA"></i>
+      </a>
+      <a class="nav-link right-nav-mystyle" href="#">
+        <img src="images/avatar.png" class="avatar"/>
+      </a>
+    </nav>
+     <!---------------------------Main container--------------------------------->
+    <div style="clear: both;"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 custome-sidebar">
+          <div class="sidebar bg-dark">
+              <div class="mt-sidebar">
+                <a href="index.html" style="display: inline-block;">Nhóm</a>
+                <div style="display: inline-block;">
+                  <button class="btn btn-small btn-rounded create-g" data-toggle="modal" data-target="#formCreateG">Tạo nhóm</button>
+                </div>
+                <div class="mt-sidebar-item">
+                  <a href="group-attended.html">Nhóm 1 <i class="fas fa-crown fa-lg" style="float: right; color: #FFD073;"></i></a>
+                  <a href="group-attended.html">Nhóm 2</a>
+                  <a href="group-attended.html">Nhóm 3</a>
+                  <a href="group-attended.html">Nhóm 4</a>
+                  <div class="collapse" id="groupCollapse">
+                    <a href="group-attended.html">Nhóm 5</a>
+                    <a href="group-attended.html">Nhóm 6</a>
+                    <a href="group-attended.html">Nhóm 7</a>
+                    <a href="group-attended.html">Nhóm 8</a>
+                    <a href="group-attended.html">Nhóm 9</a>
+                    <a href="group-attended.html">Nhóm 10</a>
+                  </div>
+                  
+                  <a class="text-toggle" data-toggle="collapse" href="#groupCollapse" aria-expanded="false" aria-controls="collapseExample" id="moreClick">
+                    <i id="moreIcon" class="fas fa-angle-down fa-lg"></i>
+                    <span id="moreContent">
+                      Xem thêm...
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="mt-sidebar">
+                <a href="index.html">
+                  Quản lý
+                </a>
+                
+              </div>
+          </div>
+        </div>
+        <!------------------------------Group Information-------------------------------->
+        <div class="col-lg-9 fix-col-padding">
+          <div class="infor-container bg-dark">
+               <img class="group_large"src="images/group_large.png" alt="">
+               <div class="group-name-main align-middle">
+                    <a href="group-attended.html">
+                         Trường Đại học Công nghệ Thông tin
+                    </a>
+               </br>
+                    <span class="text-normal" style="font-weight: 500;">
+                         <i class="fas fa-globe-asia"></i>
+                         Nhóm công khai
+                    </span>
+               </div>
+          </br>
+            <div class="option-button">
+              <button class="btn btn-small btn-rounded add-member-btn" data-toggle="" data-target="">Thêm thành viên</button> 
+              <span id="optionButton" style="font-size: small;">
+                <img src="images/more_button.png"  class="more_button" alt="More">
+              </span>
+            </div>
+              
+          </div>
+          <div class="row">
+                  <!------------------------------Center container--------------------------------->
+                  <!------------------------------------------------------------------------------->
+               <div class="col-lg-8 custome-sidebar">
+                    <div class="center-container ">
+                      <div class="upload-video-area bg-dark">
+                        <div class="upload-title">
+                          Hãy đăng một video nào
+                        </div>
+                        <br/>
+                        <span class="" type="" style="position: relative;">
+                          <img src="images/new_product_button.png" class="new_product_button img-responsive"alt="">
+                        </span>
+                        <a href="#">
+                          <div class="add-content">
+                            <div class="align-middle">
+                              <img src="images/add_content_icon.png" style="height: 21px;"alt=""/>
+                              <span style="font-size: small;
+                                           color: #dfdfdf;
+                                           font-weight: 500;">
+                                Thêm chút nội dung cho sản phẩm.
+                              </span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="group-video bg-dark" style="color: #dfdfdf;">
+                        Thôi hôm nay tới đay thôi
+                      </div>
+                    </div>
+               </div>
+                  <!------------------------------------------------------------------------------->
+                  <!------------------------------RIGHT_CONTAINER---------------------------------->
+               <div class="col-lg-4" style=" margin-top: 8px; border: solid 1px white;">
+                    Right
+               </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  <!-------------------------------------------------->
+  <!------------formCreateGroup---------->
+  <div id="formCreateG" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel" 
+                style="color: #dfdfdf;
+                       font-weight: 500;">Tạo nhóm mới</div>
+          <button type="button" class="btn btn-dark close" style="color: #dfdfdf;" data-dismiss="modal" aria-label="Close">
+            <span style="margin-bottom: 0px; "aria-hidden="true">&times;</span>
+          </button>
+          
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="images/group.png" alt="" style="height: 92px;"/>
+          </div>
+          <div class="mt-dialog">
+            Tên nhóm
+          </div>
+          <input class="form-control custome-form" type="text" placeholder="Tên nhóm...">
+          <div class="mt-dialog">
+            Quyền riêng tư
+          </div>
+          <select class="custom-select custome-form" id="" aria-placeholder="Quyền riêng tư">
+            <option selected>Nhóm kín</option>
+            <option value="1">Nhóm công khai</option>
+          </select>
+          <div class="mt-dialog">
+            Mô tả về nhóm
+          </div>
+          <input class="form-control custome-form" type="text" placeholder="Mô tả...">
+        </div>
+        <div class="modal-footer">
+          <a href="group-attended.html">
+            <button type="button" class="btn btn-small btn-rounded" data-toggle="" data-target="group-attended.html">Tạo nhóm
+            </button>
+          </a>
+          <button type="button" class="btn btn-small btn-rounded cancel" data-dismiss="modal">Không tạo nữa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------end model------------->
+  </body>
+  <script>
+    $('#moreClick').on('click',function(){
+    if($("#moreContent").text().search("Xem") >= 0){
+      $("#moreContent").text("Thu gọn");
+      $("#moreIcon").removeClass("fa-angle-down");
+      $("#moreIcon").addClass("fa-angle-up")
+    }else{
+      $("#moreContent").text("Xem thêm...");
+      $("#moreIcon").removeClass("fa-angle-up");
+      $("#moreIcon").addClass("fa-angle-down")
+    }
+  });
+  </script>
+</html>
