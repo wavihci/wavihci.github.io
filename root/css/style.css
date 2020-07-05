@@ -5,10 +5,15 @@
 a {
      text-decoration: none !important;
 }
+a:hover{
+     color: #6ab4cf;
+}
 
 body{
      background-color: #121212;
 }
+
+
 
 .logo-mystyle{
      margin-left: 10px;
@@ -152,7 +157,7 @@ body{
 .mt-center a{
      display: block;
      text-decoration: none;
-     color: #73D6FB;
+     color: #e2bc70;
      font-weight: 500;
      font-size: large;
 }
@@ -339,6 +344,76 @@ body{
 .group-video{
      margin-top: 8px;
      padding: 8px;
+}
+.content-info{
+     display: inline-block;
+     font-size: small;
+     margin: 8px;
+}
+.content_avatar{
+     display: inline-block;
+     height: 58px;
+}
+.content-name{
+     display: inline-block;
+     font-weight: 500;
+     color: #73D6FB;
+     font-size: small;
+}
+.content-time{
+     font-size: 85%;
+     font-weight: normal;
+     color: #7b7b7b;
+}
+.content-content{
+     
+}
+.content-video{
+     margin-top: 4px;
+}
+.content-reaction{
+     font-size: small;
+     margin-top: 8px;
+     margin-left: auto;
+     margin-right: 8px;
+     text-align: right;
+     margin-bottom: 12px;
+}
+.content-reaction i{
+     position: relative;
+     display: inline-block;
+     font-size: 1.3rem;
+     margin-left: 16px;
+     margin-right: 3px;
+     top: 3px
+     
+}
+.normal-title{
+     font-weight: 500;
+     color: #73D6FB;
+     font-size: small;
+}
+.normal-heading{
+     font-weight: normal;
+     color: #dfdfdf;
+     font-size: small;
+     font-style: italic;
+}
+.normal-text{
+     font-weight: normal;
+     color: #dfdfdf;
+     font-size: small;
+     font-style: normal;
+}
+
+.custome-right{
+     padding-right: 0px;
+     padding-left: 0px;
+}
+.right-container{
+     margin-left: 4px;
+     margin-right: 8px;
+     padding:8px;
 }
 
 @media (min-width: 935px) {
