@@ -179,8 +179,8 @@ body{
      font-weight: 500;
      color: #73D6FB;
 }
-.card-member{
-     font-size: 0.7rem;
+.card-member, .card-time{
+     font-size: small;
      font-weight: normal;
      color: #7b7b7b;
 }
@@ -415,7 +415,13 @@ body{
      margin-right: 8px;
      padding:8px;
 }
-
+.center-container{
+     padding-bottom: 16px;
+}
+.event_avatar{
+     height: 72px;
+     margin-left: -20px;
+}
 @media (min-width: 935px) {
      .navbar-expand-lg {
        -ms-flex-flow: row nowrap;

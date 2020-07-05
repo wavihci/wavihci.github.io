@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="root/css/style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>Wavi Nhóm</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+      <!-- Links -->
+      <!--Logo-->
+      <!-- Toggler/collapsibe Button -->
+      <a class="navbar-brand logo-mystyle" href="#">
+        <img src="images/Logo.png" style="height: 36px"/>
+      </a>
+
+      <button class="navbar-toggler ml-auto" style="padding-top: 15px;" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="collapsibleNav collapsibleNav2">
+        <span class="navbar-toggler-icon">
+          <i class="fa fa-bars fa-lg text-center" style="color: #dfdfdf;"></i>
+        </span>
+      </button>
+
+       
+      <!--Navbar can collapse-->
+      <div class="collapse navbar-collapse multi-collapse" id="collapsibleNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link navbtn-mystyle text-center" href="index.html">Nhóm</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link navbtn-mystyle navbtn-mystyle-selected text-center" href="event.html">Sự kiện</a>
+          </li>
+        </ul>
+      </div>
+      <!--end of collapse navbar-->
+      <div class="collapse navbar-collapse multi-collapse input-group" style="max-width: 500px;" id="collapsibleNav2">
+        <input class="form-control form-rounded my-sbox min-index" type="text" placeholder="Tìm kiếm..." aria-label="Search">
+        <div class="input-group-append">
+          <!--input group text -->
+          <span class="input-group-text sbtn-rounded btn-mystyle" id="basic-text">
+            <i class="fa fa-search fa-sm"></i>
+          </span>
+        </div>
+      </div>
+      <a href="#" class="nav-link right-nav-mystyle">
+        <i class="fa fa-upload fa-2x button-icon-up" style="color:#EAEAEA"></i>
+        <button class="btn btn-mystyle btn-rounded button-text" style="min-width: 142px;">Thêm video mới</button>
+      </a>
+      <a href="#" class="nav-link right-nav-mystyle">
+        <i class="fa fa-bell fa-2x" style="transform: rotate(25deg); color:#EAEAEA"></i>
+      </a>
+      <a class="nav-link right-nav-mystyle" href="#">
+        <img src="images/avatar.png" class="avatar"/>
+      </a>
+    </nav>
+     <!---------------------------Main container--------------------------------->
+    <div style="clear: both;"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 custome-sidebar">
+          <div class="sidebar bg-dark">
+              <div class="mt-sidebar">
+                <a href="event.html" style="display: inline-block;">Sự kiện</a>
+                <div style="display: inline-block;">
+                  <button class="btn btn-small btn-rounded create-g" data-toggle="modal" data-target="">Tạo sự kiện</button>
+                </div>
+                <div class="mt-sidebar-item">
+                  <a href="event.html">Sự kiện nổi bật</a>
+                  <a href="event.html">Sự kiện quan tâm</a>
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+        <!------------------------------Center container--------------------------------->
+        <div class="col-lg-6 custome-sidebar">
+          <div class="center-container bg-dark">
+              <div class="mt-center">
+              <a href="#">Sự kiện nổi bật</a>
+              </div>
+              <!-------------------------A grid-------------------------->
+              <div class="gridV">
+                <div class="row">
+                  <div class="col-sm-6 custome-col" style="color: aliceblue;">
+                      <div class="card-mystyle">
+                        <div class="row">
+                          <div class="col-3" style="display: inline-block;">
+                            <img class="event_avatar"src="images/event_avatar.png" alt="Avatar">
+                          </div>
+                          <div class="col-9">
+                                 <div class="card-name" style="margin-top: 2px;">
+                                   <a href="group-attended.html">Tên sự kiện</a>
+                                 </div>
+                                 <div class="card-time" style="margin-top: 2px;">
+                                   Thời gian: 07/08/2020
+                                 </div>
+                                 <div class="normal-text"style="margin-top: 2px;" >
+                                   100 người quan tâm
+                                 </div>
+                          </div>
+                          <div class="normal-text" style="margin-top: 4px;">Nguyễn Văn A đã tạo sự kiện này</div>
+                          <div class="text-center" style="width: 100%; margin-top: 12px;">
+                              <button id="careButton" type="button" class="btn btn-small btn-rounded" style="width: 159px;">Quan tâm</button>
+                          </div>
+                        </div>
+
+                      </div>
+                  </div>
+                    <!------------EndCard----------->
+                 <div class="col-sm-6 custome-col" style="color: aliceblue;">
+                    <div class="card-mystyle">
+                         <div class="row">
+                         <div class="col-3" style="display: inline-block;">
+                              <img class="event_avatar"src="images/event_avatar.png" alt="Avatar">
+                         </div>
+                         <div class="col-9">
+                                   <div class="card-name" style="margin-top: 2px;">
+                                   <a href="group-attended.html">Tên sự kiện</a>
+                                   </div>
+                                   <div class="card-time" style="margin-top: 2px; color: #91FF77;">
+                                   Đang diễn ra
+                                   </div>
+                                   <div class="normal-text"style="margin-top: 2px;" >
+                                   100 người quan tâm
+                                   </div>
+                         </div>
+                         <div class="normal-text" style="margin-top: 4px;">Nguyễn Văn A đã tạo sự kiện này</div>
+                         <div class="text-center" style="width: 100%; margin-top: 12px;">
+                              <button class="btn btn-small btn-rounded" style="width: 159px;" data-toggle="" data-target="">Tham gia</button>
+                         </div>
+                         </div>
+
+                    </div>
+                </div>
+                                        <!------------EndCard----------->
+                </div>
+                <div class="row">
+                   <div class="col-sm-6 custome-col" style="color: aliceblue;">
+                      <div class="card-mystyle">
+                           <div class="row">
+                           <div class="col-3" style="display: inline-block;">
+                                <img class="event_avatar"src="images/event_avatar.png" alt="Avatar">
+                           </div>
+                           <div class="col-9">
+                                     <div class="card-name" style="margin-top: 2px;">
+                                     <a href="group-attended.html">Tên sự kiện</a>
+                                     </div>
+                                     <div class="card-time" style="margin-top: 2px; color: #FF8282;">
+                                     Đã kết thúc
+                                     </div>
+                                     <div class="normal-text"style="margin-top: 2px;" >
+                                     100 người quan tâm
+                                     </div>
+                           </div>
+                           <div class="normal-text" style="margin-top: 4px;">Nguyễn Văn A đã tạo sự kiện này</div>
+                           <div class="text-center" style="width: 100%; margin-top: 12px;">
+                                <button class="btn btn-small btn-rounded" style="width: 159px;" disabled>Đã kết thúc</button>
+                           </div>
+                           </div>
+  
+                      </div>
+                  </div>
+                                          <!------------EndCard----------->
+                  </div>
+              </div>
+              <!----------------------------------End grid----------------------------------->
+            <div class="mt-center">
+              <a href="#">Sự kiện đã quan tâm</a>
+            </div>
+            <!-------------------------A grid-------------------------->
+            <div class="gridV">
+               <div class="row">
+                 <div class="col-sm-6 custome-col" style="color: aliceblue;">
+                     <div class="card-mystyle">
+                       <div class="row">
+                         <div class="col-3" style="display: inline-block;">
+                           <img class="event_avatar"src="images/event_avatar.png" alt="Avatar">
+                         </div>
+                         <div class="col-9">
+                                <div class="card-name" style="margin-top: 2px;">
+                                  <a href="group-attended.html">Tên sự kiện</a>
+                                </div>
+                                <div class="card-time" style="margin-top: 2px;">
+                                  Thời gian: 07/08/2020
+                                </div>
+                                <div class="normal-text"style="margin-top: 2px;" >
+                                  100 người quan tâm
+                                </div>
+                         </div>
+                         <div class="normal-text" style="margin-top: 4px;">Nguyễn Văn A đã tạo sự kiện này</div>
+                         <div class="text-center" style="width: 100%; margin-top: 12px;">
+                              <div class="card-time"style="font-weight:500">Chưa có xếp hạng</div>
+                         </div>
+                       </div>
+
+                     </div>
+                 </div>
+                   <!------------EndCard----------->
+                <div class="col-sm-6 custome-col" style="color: aliceblue;">
+                   <div class="card-mystyle">
+                        <div class="row">
+                        <div class="col-3" style="display: inline-block;">
+                             <img class="event_avatar"src="images/event_avatar.png" alt="Avatar">
+                        </div>
+                        <div class="col-9">
+                                  <div class="card-name" style="margin-top: 2px;">
+                                  <a href="group-attended.html">Tên sự kiện</a>
+                                  </div>
+                                  <div class="card-time" style="margin-top: 2px; color: #91FF77;">
+                                  Đang diễn ra
+                                  </div>
+                                  <div class="normal-text"style="margin-top: 2px;" >
+                                  100 người quan tâm
+                                  </div>
+                        </div>
+                        <div class="normal-text" style="margin-top: 4px;">Nguyễn Văn A đã tạo sự kiện này</div>
+                        <div class="text-center" style="width: 100%; margin-top: 12px;">
+                              <div class="card-time"style="font-weight:500; color: #73D6FB">Xếp hạng của bạn: 5</div>
+                        </div>
+                        </div>
+
+                   </div>
+               </div>
+                                       <!------------EndCard----------->
+               </div>
+             </div>
+             <!----------------------------------End grid----------------------------------->
+            
+            <!----------------------------------End grid----------------------------------->
+            
+            <!----------------------------------End grid----------------------------------->
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------->
+        <!------------------------------RIGHT_CONTAINER---------------------------------->
+        <div class="col-lg-3" style=" margin-top: 8px; border: solid 1px white;">
+          Right
+        </div>
+        <!------------------------------------------------------------------------------->
+      </div>
+    </div>
+  <!-------------------------------------------------->
+  <!------------formCreateGroup---------->
+  <div id="formCreateG" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title" id="exampleModalLabel" 
+                style="color: #dfdfdf;
+                       font-weight: 500;">Tạo nhóm mới</div>
+          <button type="button" class="btn btn-dark close" style="color: #dfdfdf;" data-dismiss="modal" aria-label="Close">
+            <span style="margin-bottom: 0px; "aria-hidden="true">&times;</span>
+          </button>
+          
+        </div>
+        <div class="modal-body">
+          <div class="text-center">
+            <img src="images/group.png" alt="" style="height: 92px;"/>
+          </div>
+          <div class="mt-dialog">
+            Tên nhóm
+          </div>
+          <input class="form-control custome-form" type="text" placeholder="Tên nhóm...">
+          <div class="mt-dialog">
+            Quyền riêng tư
+          </div>
+          <select class="custom-select custome-form" id="" aria-placeholder="Quyền riêng tư">
+            <option selected>Nhóm kín</option>
+            <option value="1">Nhóm công khai</option>
+          </select>
+          <div class="mt-dialog">
+            Mô tả về nhóm
+          </div>
+          <input class="form-control custome-form" type="text" placeholder="Mô tả...">
+        </div>
+        <div class="modal-footer">
+          <a href="group-attended.html">
+            <button type="button" class="btn btn-small btn-rounded" data-toggle="" data-target="group-attended.html">Tạo nhóm
+            </button>
+          </a>
+          <button type="button" class="btn btn-small btn-rounded cancel" data-dismiss="modal">Không tạo nữa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-----------end model------------->
+  </body>
+  <script>
+     $('#careButton').on('click',function(){
+          $('#careButton').text('Đã quan tâm');
+          $("#careButton").attr('disabled', true)
+  });
+   </script>
+</html>
