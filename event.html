@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="root/css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Wavi Nhóm</title>
+    <title>Wavi Sự kiện</title>
   </head>
   <body>
     
@@ -103,7 +103,7 @@
                           </div>
                           <div class="col-9">
                                  <div class="card-name" style="margin-top: 2px;">
-                                   <a href="group-attended.html">Tên sự kiện</a>
+                                   <a href="event-page.html">Tên sự kiện</a>
                                  </div>
                                  <div class="card-time" style="margin-top: 2px;">
                                    Thời gian: 07/08/2020
@@ -129,7 +129,7 @@
                          </div>
                          <div class="col-9">
                                    <div class="card-name" style="margin-top: 2px;">
-                                   <a href="group-attended.html">Tên sự kiện</a>
+                                   <a href="event-page.html">Tên sự kiện</a>
                                    </div>
                                    <div class="card-time" style="margin-top: 2px; color: #91FF77;">
                                    Đang diễn ra
@@ -140,7 +140,7 @@
                          </div>
                          <div class="normal-text" style="margin-top: 4px;">Nguyễn Văn A đã tạo sự kiện này</div>
                          <div class="text-center" style="width: 100%; margin-top: 12px;">
-                              <button class="btn btn-small btn-rounded" style="width: 159px;" data-toggle="" data-target="">Tham gia</button>
+                              <button class="btn btn-small btn-rounded" style="width: 159px;" id="careButton">Quan tâm</button>
                          </div>
                          </div>
 
@@ -157,7 +157,7 @@
                            </div>
                            <div class="col-9">
                                      <div class="card-name" style="margin-top: 2px;">
-                                     <a href="group-attended.html">Tên sự kiện</a>
+                                     <a href="event-page.html">Tên sự kiện</a>
                                      </div>
                                      <div class="card-time" style="margin-top: 2px; color: #FF8282;">
                                      Đã kết thúc
@@ -192,7 +192,7 @@
                          </div>
                          <div class="col-9">
                                 <div class="card-name" style="margin-top: 2px;">
-                                  <a href="group-attended.html">Tên sự kiện</a>
+                                  <a href="event-page.html">Tên sự kiện</a>
                                 </div>
                                 <div class="card-time" style="margin-top: 2px;">
                                   Thời gian: 07/08/2020
@@ -218,7 +218,7 @@
                         </div>
                         <div class="col-9">
                                   <div class="card-name" style="margin-top: 2px;">
-                                  <a href="group-attended.html">Tên sự kiện</a>
+                                  <a href="event-page.html">Tên sự kiện</a>
                                   </div>
                                   <div class="card-time" style="margin-top: 2px; color: #91FF77;">
                                   Đang diễn ra
@@ -255,49 +255,6 @@
     </div>
   <!-------------------------------------------------->
   <!------------formCreateGroup---------->
-  <div id="formCreateG" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-title" id="exampleModalLabel" 
-                style="color: #dfdfdf;
-                       font-weight: 500;">Tạo nhóm mới</div>
-          <button type="button" class="btn btn-dark close" style="color: #dfdfdf;" data-dismiss="modal" aria-label="Close">
-            <span style="margin-bottom: 0px; "aria-hidden="true">&times;</span>
-          </button>
-          
-        </div>
-        <div class="modal-body">
-          <div class="text-center">
-            <img src="images/group.png" alt="" style="height: 92px;"/>
-          </div>
-          <div class="mt-dialog">
-            Tên nhóm
-          </div>
-          <input class="form-control custome-form" type="text" placeholder="Tên nhóm...">
-          <div class="mt-dialog">
-            Quyền riêng tư
-          </div>
-          <select class="custom-select custome-form" id="" aria-placeholder="Quyền riêng tư">
-            <option selected>Nhóm kín</option>
-            <option value="1">Nhóm công khai</option>
-          </select>
-          <div class="mt-dialog">
-            Mô tả về nhóm
-          </div>
-          <input class="form-control custome-form" type="text" placeholder="Mô tả...">
-        </div>
-        <div class="modal-footer">
-          <a href="group-attended.html">
-            <button type="button" class="btn btn-small btn-rounded" data-toggle="" data-target="group-attended.html">Tạo nhóm
-            </button>
-          </a>
-          <button type="button" class="btn btn-small btn-rounded cancel" data-dismiss="modal">Không tạo nữa</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-----------end model------------->
   </body>
   <script>
      $('#careButton').on('click',function(){

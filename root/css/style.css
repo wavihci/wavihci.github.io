@@ -309,6 +309,12 @@ body{
      margin: 8px;
      left: 47%;
 }
+.care-event{
+     display: inline-block;
+     position: relative;
+     margin: 8px;
+     left: 53%;
+}
 .more_button{
      display: inline-block;
      height: 31px;
@@ -373,7 +379,7 @@ body{
 }
 .content-reaction{
      font-size: small;
-     margin-top: 8px;
+     margin-top: 16px;
      margin-left: auto;
      margin-right: 8px;
      text-align: right;
@@ -416,12 +422,23 @@ body{
      padding:8px;
 }
 .center-container{
-     padding-bottom: 16px;
+
 }
 .event_avatar{
      height: 72px;
      margin-left: -20px;
 }
+
+
+@media (max-width: 991.98px) {
+     .option-button{
+          left: 70%;
+     }
+     .care-event{
+          left: 70%;
+     }
+}
+
 @media (min-width: 935px) {
      .navbar-expand-lg {
        -ms-flex-flow: row nowrap;
@@ -466,6 +483,15 @@ body{
      }
 }
 
+@media (max-width: 635px){
+     .option-button{
+          left: 55%;
+     }
+     .care-event{
+          left: 55%;
+     }
+}
+
 @media (max-width: 450px){
      .right-nav-mystyle{
           max-width: 50px;
@@ -489,5 +515,11 @@ body{
      .avatar{
           height: 35px;
           margin-left: -10px;
+     }
+     .option-button{
+          left: 50%;
+     }
+     .care-event{
+          left: 50%;
      }
 }

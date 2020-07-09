@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="root/css/style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <title>Wavi Nhóm</title>
+    <title>Wavi Sự kiện</title>
   </head>
   <body>
     
@@ -39,10 +39,10 @@
       <div class="collapse navbar-collapse multi-collapse" id="collapsibleNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="nav-link navbtn-mystyle navbtn-mystyle-selected text-center" href="index.html">Nhóm</a>
+              <a class="nav-link navbtn-mystyle text-center" href="index.html">Nhóm</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link navbtn-mystyle text-center" href="event.html">Sự kiện</a>
+              <a class="nav-link navbtn-mystyle navbtn-mystyle-selected text-center" href="event.html">Sự kiện</a>
           </li>
         </ul>
       </div>
@@ -68,69 +68,48 @@
       </a>
     </nav>
      <!---------------------------Main container--------------------------------->
-    <div style="clear: both;"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-3 custome-sidebar">
-          <div class="sidebar bg-dark">
-              <div class="mt-sidebar">
-                <a href="index.html" style="display: inline-block;">Nhóm</a>
-                <div style="display: inline-block;">
-                  <button class="btn btn-small btn-rounded create-g" data-toggle="modal" data-target="#formCreateG">Tạo nhóm</button>
-                </div>
-                <div class="mt-sidebar-item">
-                  <a href="group-attended.html">Nhóm 1 <i class="fas fa-crown fa-lg" style="float: right; color: #FFD073;"></i></a>
-                  <a href="group-attended.html">Nhóm 2</a>
-                  <a href="group-attended.html">Nhóm 3</a>
-                  <a href="group-attended.html">Nhóm 4</a>
-                  <div class="collapse" id="groupCollapse">
-                    <a href="group-attended.html">Nhóm 5</a>
-                    <a href="group-attended.html">Nhóm 6</a>
-                    <a href="group-attended.html">Nhóm 7</a>
-                    <a href="group-attended.html">Nhóm 8</a>
-                    <a href="group-attended.html">Nhóm 9</a>
-                    <a href="group-attended.html">Nhóm 10</a>
-                  </div>
-                  
-                  <a class="text-toggle" data-toggle="collapse" href="#groupCollapse" aria-expanded="false" aria-controls="collapseExample" id="moreClick">
-                    <i id="moreIcon" class="fas fa-angle-down fa-lg"></i>
-                    <span id="moreContent">
-                      Xem thêm...
-                    </span>
-                  </a>
-                </div>
-              </div>
-
-              <div class="mt-sidebar">
-                <a href="index.html">
-                  Quản lý
-                </a>
-                
-              </div>
-          </div>
-        </div>
+     <div style="clear: both;"></div>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-lg-3 custome-sidebar">
+           <div class="sidebar bg-dark">
+               <div class="mt-sidebar">
+                 <a href="event.html" style="display: inline-block;">Sự kiện</a>
+                 <div style="display: inline-block;">
+                   <button class="btn btn-small btn-rounded create-g" data-toggle="modal" data-target="">Tạo sự kiện</button>
+                 </div>
+                 <div class="mt-sidebar-item">
+                   <a href="event.html">Sự kiện nổi bật</a>
+                   <a href="event.html">Sự kiện quan tâm</a>
+                   
+                 </div>
+               </div>
+           </div>
+         </div>
         <!------------------------------Group Information-------------------------------->
         <div class="col-lg-9 fix-col-padding">
           <div class="infor-container bg-dark">
-               <img class="group_large"src="images/group_large.png" alt="">
+               <img class="group_large"src="images/event-avatar-l.png" alt="">
                <div class="group-name-main align-middle">
-                    <a href="group-attended.html">
-                         Trường Đại học Công nghệ Thông tin
+                    <a href="event-page.html">
+                         Tên sự kiện
                     </a>
-               </br>
-                    <span class="text-normal" style="font-weight: 500;">
-                         <i class="fas fa-globe-asia"></i>
-                         Nhóm công khai
+                    <br/>
+                    <span class="text-normal" style="font-weight: normal; color: #91FF77;">
+                         Đang diễn ra
                     </span>
+                    <br/>
+                    <span class="text-normal" style="font-weight: normal; color: #dfdfdf;">
+                         Bạn và 100 người khác quan tâm sự kiện này
+                    </span>
+
+                    
                </div>
+               
           </br>
-            <div class="option-button">
-              <button class="btn btn-small btn-rounded add-member-btn" data-toggle="" data-target="">Thêm thành viên</button> 
-              <span id="optionButton" style="font-size: small;">
-                <img src="images/more_button.png"  class="more_button" alt="More">
-              </span>
+            <div class="care-event">
+              <button class="btn btn-small btn-rounded add-member-btn" id="careButton">Quan tâm sự kiện</button> 
             </div>
-              
           </div>
           <div class="row">
                   <!------------------------------Center container--------------------------------->
@@ -139,13 +118,14 @@
                     <div class="center-container ">
                       <div class="upload-video-area bg-dark">
                         <div class="upload-title">
-                          Hãy đăng một video nào
+                          Đăng một video để tham gia sự kiện nào
                         </div>
-                        <br/>
-                        <span class="" type="" style="position: relative;">
-                          <img src="images/new_product_button.png" class="new_product_button img-responsive"alt="">
-                        </span>
-                        <a href="#">
+                        <a href="event-page-attended.html">
+                          <span class="" type="" style="position: relative;">
+                            <img src="images/new_product_button.png" class="new_product_button img-responsive"alt="">
+                          </span>
+                        </a>
+                        <a href="event-page-attended.html">
                           <div class="add-content">
                             <div class="align-middle">
                               <img src="images/add_content_icon.png" style="height: 21px;"alt=""/>
@@ -158,7 +138,7 @@
                           </div>
                         </a>
                       </div>
-
+                    <!--------VIDEO==========-->
                       <div class="group-video bg-dark" style="color: #dfdfdf;">
                         <div class="content-info">
                               <img src="images/avatar.png" class="content_avatar"alt="">
@@ -185,18 +165,67 @@
                         <div class="content-reaction">
                           <i class="far fa-heart"></i>
                           <span id="" class="align-center">
-                              535
+                              5M
                           </span>
                           <i class="far fa-comment-dots"></i>
                           <span id="">
-                            101
+                              10K
                           </span>
-                          <i class="fas fa-share"></i>
+                          <i class="far fa-eye"></i>
                           <span id="">
-                            301
+                              10M
+                          </span>
+                          <i class="fas fa-medal"></i>
+                          <span id="">
+                              1
                           </span>
                         </div>
                       </div>
+                      <!------------end video=========-->
+                      <!--------VIDEO==========-->
+                      <div class="group-video bg-dark" style="color: #dfdfdf;">
+                         <div class="content-info">
+                               <img src="images/avatar.png" class="content_avatar"alt="">
+                               <div class="align-middle" style="display: inline-block;
+                                           margin: 4px;">
+                                 <a href="#" class="content-name" alt="">
+                                   Nguyễn Văn Thành
+                                 </a>
+                                 <br/>
+                                 <span class="content-time">
+                                   33 phút trước
+                                 </span>
+                               </div>
+                           <div class="content-content">
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem assumenda dolor dolorum nobis veniam, maxime, culpa soluta voluptas quam magnam cum nam atque mollitia voluptates et, fugiat nesciunt! Iste!
+                           </div>
+                         </div>
+                         <!-------------Video here------------>
+                         <div class="content-video text-center">
+                             <img src="images/video2.png" style="max-height: 360px;
+                                                                max-width: 98%;
+                                                                border-radius: 3px;" alt="" class="img-responsive">
+                         </div>
+                         <div class="content-reaction">
+                           <i class="far fa-heart"></i>
+                           <span id="" class="align-center">
+                               4M
+                           </span>
+                           <i class="far fa-comment-dots"></i>
+                           <span id="">
+                               10K
+                           </span>
+                           <i class="far fa-eye"></i>
+                           <span id="">
+                               6M
+                           </span>
+                           <i class="fas fa-medal"></i>
+                           <span id="">
+                               2
+                           </span>
+                         </div>
+                       </div>
+                       <!------------end video=========-->
                     </div>
                </div>
                   <!------------------------------------------------------------------------------->
@@ -204,32 +233,41 @@
                <div class="col-lg-4 custome-right" style=" margin-top: 8px;">
                     <div class="right-container bg-dark">
                       <div class="normal-title">
-                        Thông tin về nhóm
+                        Thông tin về sự kiện
                       </div>
                     
                       <div class="normal-heading" style="padding-top: 8px;">
-                        Mô tả:
+                        Thông tin và Thể lệ:
                       </div>
                       <span class="normal-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate exercitationem assumenda dolor dolorum nobis veniam, maxime, culpa soluta voluptas quam magnam cum nam atque mollitia voluptates et, fugiat nesciunt! Iste!
                       </span>
                       <div class="normal-heading" style="padding-top: 8px;">
-                          Thành viên
-                          <span style="font-weight: 500; 
-                                       font-style: normal;
-                                       margin-left: 16px;">
-                            300.001
-                          </span>
-                      </div>
-                      <div style="text-align: center; margin-top: 4px;">
-                        <img src="images/avatar.png" style="height: 48px;" alt="">
-                        <img src="images/avatar.png" style="height: 48px;" alt="">
-                        <img src="images/avatar.png" style="height: 48px;" alt="">
-                        <img src="images/avatar.png" style="height: 48px;" alt="">
-                        <img src="images/avatar.png" style="height: 48px;" alt="">
-                        
-                      </div>
-                      </div>
+                          Thời gian:
+                          <br/>
+                          <div class="text-center">
+                               
+                              <span style="font-weight: normal; 
+                              font-style: normal;
+                              margin-left: 16px;
+                              ">
+                              07/08/2020 đến 09/08/2020
+                              </span>
+                          </div>
+                      </div> 
+                      <a href="#">
+                         <div class="add-content" style="margin-top: 12px;">
+                           <div class="align-middle text-center">
+                             <i class="fas fa-medal" style="color: #FFD073"></i>
+                             <span style="font-size: small;
+                                          color: #FFD073;
+                                          font-weight: 500;">
+                               Bảng xếp hạng
+                             </span>
+                           </div>
+                         </div>
+                       </a>
+                    </div>
                </div>
           </div>
         </div>
@@ -237,62 +275,11 @@
       </div>
     </div>
   <!-------------------------------------------------->
-  <!------------formCreateGroup---------->
-  <div id="formCreateG" class="modal fade" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="modal-title" id="exampleModalLabel" 
-                style="color: #dfdfdf;
-                       font-weight: 500;">Tạo nhóm mới</div>
-          <button type="button" class="btn btn-dark close" style="color: #dfdfdf;" data-dismiss="modal" aria-label="Close">
-            <span style="margin-bottom: 0px; "aria-hidden="true">&times;</span>
-          </button>
-          
-        </div>
-        <div class="modal-body">
-          <div class="text-center">
-            <img src="images/group.png" alt="" style="height: 92px;"/>
-          </div>
-          <div class="mt-dialog">
-            Tên nhóm
-          </div>
-          <input class="form-control custome-form" type="text" placeholder="Tên nhóm...">
-          <div class="mt-dialog">
-            Quyền riêng tư
-          </div>
-          <select class="custom-select custome-form" id="" aria-placeholder="Quyền riêng tư">
-            <option selected>Nhóm kín</option>
-            <option value="1">Nhóm công khai</option>
-          </select>
-          <div class="mt-dialog">
-            Mô tả về nhóm
-          </div>
-          <input class="form-control custome-form" type="text" placeholder="Mô tả...">
-        </div>
-        <div class="modal-footer">
-          <a href="group-attended.html">
-            <button type="button" class="btn btn-small btn-rounded" data-toggle="" data-target="group-attended.html">Tạo nhóm
-            </button>
-          </a>
-          <button type="button" class="btn btn-small btn-rounded cancel" data-dismiss="modal">Không tạo nữa</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-----------end model------------->
   </body>
   <script>
-    $('#moreClick').on('click',function(){
-    if($("#moreContent").text().search("Xem") >= 0){
-      $("#moreContent").text("Thu gọn");
-      $("#moreIcon").removeClass("fa-angle-down");
-      $("#moreIcon").addClass("fa-angle-up")
-    }else{
-      $("#moreContent").text("Xem thêm...");
-      $("#moreIcon").removeClass("fa-angle-up");
-      $("#moreIcon").addClass("fa-angle-down")
-    }
-  });
+    $('#careButton').on('click',function(){
+         $('#careButton').text('Đã quan tâm sự kiện');
+         $("#careButton").attr('disabled', true)
+ });
   </script>
 </html>
