@@ -307,7 +307,7 @@ body{
      margin: 8px;
      left: 47%;
 }
-.care-event{
+.care-event,.attend-group{
      display: inline-block;
      position: relative;
      margin: 8px;
@@ -472,7 +472,7 @@ body{
      .option-button{
           left: 70%;
      }
-     .care-event{
+     .care-event,.attend-group{
           left: 70%;
      }
 }
@@ -525,7 +525,7 @@ body{
      .option-button{
           left: 55%;
      }
-     .care-event{
+     .care-event,.attend-group{
           left: 55%;
      }
 }
@@ -533,6 +533,9 @@ body{
 @media (max-width: 450px){
      .right-nav-mystyle{
           max-width: 50px;
+     }
+     .option-button{
+          left: 45%;
      }
 }
 
@@ -555,9 +558,9 @@ body{
           margin-left: -10px;
      }
      .option-button{
-          left: 50%;
+          left: 30%;
      }
-     .care-event{
-          left: 50%;
+     .care-event,.attend-group{
+          left: 40%;
      }
 }
