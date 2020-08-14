@@ -328,6 +328,10 @@ body{
      margin-top: 0px;
      padding-top: 12px;
 }
+.upload-video-area{
+     margin-bottom: 8px;
+}
+
 .new_product_button{
      position: relative;
      display: block;
@@ -346,7 +350,6 @@ body{
 }
 
 .group-video{
-     margin-top: 8px;
      padding: 8px;
 }
 .content-info{
